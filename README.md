@@ -1,3 +1,4 @@
+# Change for big stash
 # D2BS IS NOT SAFE FROM DETECTION!
 
 [**Join the Forums!**](https://d2bot.discourse.group/)
