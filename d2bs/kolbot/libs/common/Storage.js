@@ -311,12 +311,12 @@ Loop:
 
 var Storage = new function () {
 	this.Init = function () {
-		this.StashY = me.gametype === 0 ? 4 : 10;//change 8 to 10 row for big stash
-		this.Inventory = new Container("Inventory", 10, 8, 3);//change 4 to 8 row for big Inventory
-		this.TradeScreen = new Container("Inventory", 10, 4, 5);
-		this.Stash = new Container("Stash", 6, this.StashY, 7);
+		this.StashY = me.gametype === 0 ? 4 : 10;//big stash 10 * 10
+		this.Inventory = new Container("Inventory", 10, 8, 3);//big Inventory 10 * 8
+		this.TradeScreen = new Container("Inventory", 10, 8, 5);//big Inventory 10 * 8
+		this.Stash = new Container("Stash", 10, this.StashY, 7);//big stash 10 * 10
 		this.Belt = new Container("Belt", 4 * this.BeltSize(), 1, 2);
-		this.Cube = new Container("Horadric Cube", 3, 4, 10);//change 6 to 10 Column for big stash
+		this.Cube = new Container("Horadric Cube", 10, 8, 6);//big Cube 10 * 8
 		this.InvRef = [];
 
 		this.Reload();
